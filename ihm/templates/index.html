@@ -1,0 +1,121 @@
+{% include 'header.html' %}
+
+<div class="media-object">
+    <div class="media-object-section middle">
+        <div class="thumbnail">
+            <img src="/static/img/logo.png" alt="RhoThetaPhi" width="300" height="200">
+        </div>
+    </div>
+    <div class="media-object-section">
+        <div class="thumbnail">
+            <img src="/static/img/AJC.svg" alt="AJC Formation" width="250" height="200">
+        </div>
+    </div>
+    <div class="media-object-section">
+        <div class="thumbnail">
+            <img src="/static/img/akkodis.png" alt="Akkodis" width="400" height="200">
+        </div>
+    </div>
+</div>
+
+<div class="grid-x grid-padding-x">
+    <div class="cell medium-12 large-6">
+        <div class="responsive-embed stream">
+            <iframe name="Streaming" width="4" height="3" src="http://51.91.150.164:8889/mystream"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+
+
+    <div class="cell medium-12 large-4 large-offset-1">
+
+        <!--
+        Cette partie a été développé pour la version future
+        <div class="grid-x">
+            <div class="cell small-4 button-group align-center">
+                <div class="button-group align-center">
+                    <a href="#" id=posemine class="button action"><img src="static/img/mine_check.png" class="mine"></a>
+                </div>
+            </div>
+            <div class="cell small-4 button-group align-center">
+                <div class="button-group align-center">
+                    <a href="#" id=nbmine class="button action"><img src="static/img/mine_nb.png" class="mine"></a>
+                </div>
+            </div>
+            <div class="cell small-4 button-group align-center">
+                <div class="button-group align-center">
+                    <a href="#" id=accroche class="button action"><img src="static/img/accroche.svg"
+                            class="accroche"></a>
+                </div>
+            </div>
+        </div>
+        -->
+
+
+
+
+        <ul class="tabs" data-tabs id="example-tabs">
+            <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Direction</a></li>
+            <li class="tabs-title"><a href="#panel2">Arm</a></li>
+        </ul>
+
+        <div class="tabs-content" data-tabs-content="example-tabs">
+
+            <div class="tabs-panel is-active" id="panel1">
+                <div class="grid-x directions" id="directions">
+                    <div class="cell small-4 button-group align-center">
+                        <a href="#" id=rotateleft class="button pad"><img src="static/img/rotateleft.svg"
+                                class="arrowrotate"></a>
+                        <a href="#" id=slideleft class="button pad"><img src="static/img/left.svg" class="arrow"></a>
+                        <a class="button pad"></a>
+                    </div>
+                    <div class="cell small-4 button-group align-center">
+                        <a href="#" id=forward class="button pad"><img src="static/img/forward.svg" class="arrow"></a>
+                        <a href="#" id=stop class="button pad"><img src="static/img/stop-sign.svg" class="stop"></a>
+                        <a href="#" id=backward class="button pad"><img src="static/img/backward.svg" class="arrow"></a>
+                    </div>
+                    <div class="cell small-4 button-group align-center">
+                        <a href="#" id=rotateright class="button pad"><img src="static/img/rotateright.svg"
+                                class="arrowrotate"></a>
+                        <a href="#" id=slideright class="button pad"><img src="static/img/right.svg" class="arrow"></a>
+                        <a class="button pad"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tabs-panel" id="panel2">
+                <div class="grid-x arm" id="arm">
+                    <div class="cell small-3 button-group align-center">
+                        <a href="#" id=motorA1 class="button pad"><img src="static/img/mechanical-arm-fold_A.png"
+                                class="arrowrotate"></a>
+                        <a href="#" id=motorA2 class="button pad"><img src="static/img/mechanical-arm-unfold_A.png"
+                                class="arrowrotate"></a>
+                    </div>
+                    <div class="cell small-3 button-group align-center">
+                        <a href="#" id=motorB1 class="button pad"><img src="static/img/mechanical-arm-fold_B.png"
+                                class="arrowrotate"></a>
+                        <a href="#" id=motorB2 class="button pad"><img src="static/img/mechanical-arm-unfold_B.png"
+                                class="arrowrotate"></a>
+                    </div>
+                    <div class="cell small-3 button-group align-center">
+                        <a href="#" id=motorC1 class="button pad"><img src="static/img/mechanical-arm-fold_C.png"
+                                class="arrowrotate"></a>
+                        <a href="#" id=motorC2 class="button pad"><img src="static/img/mechanical-arm-unfold_C.png"
+                                class="arrowrotate"></a>
+                    </div>
+                    <div class="cell small-3 button-group align-center">
+                        <a href="#" id=claw1 class="button pad"><img src="static/img/claw-machine-open.png"
+                                class="claw"></a>
+                        <a href="#" id=claw2 class="button pad"><img src="static/img/claw-machine-close.png"
+                                class="claw"></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+</div>
+
+{% include 'footer.html' %}

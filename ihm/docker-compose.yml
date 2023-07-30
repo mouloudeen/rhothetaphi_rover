@@ -1,0 +1,9 @@
+services:
+  ihm3:
+    image: virtus2/ihm:v1
+    volumes:
+      - /home/ubuntu/ihm:/code/
+    container_name: ihm
+    ports:
+      - "8085:80"
+    restart: always

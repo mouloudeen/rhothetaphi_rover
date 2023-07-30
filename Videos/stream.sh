@@ -1,0 +1,1 @@
+libcamera-vid --framerate 60 --nopreview --inline -t 0 --width 640 --height 480 --listen -o - | ffmpeg -i - -preset ultrafast -tune zerolatency -vcodec libx264 -r 60 -s 640x480 -f rtsp rtsp://51.91.150.164:8554/mystream
